@@ -1,6 +1,40 @@
 /* ==========================================================================
 Content
 ========================================================================== */
+img {
+  height: auto;
+  max-width: 100%;
+  
+}
+
+.header {
+  .social ul li {
+    margin: 0 10px 0 10px;
+  }
+}
+
 .app-loading {
   display: none;
+}
+
+.banner {
+  .banner-img {
+    justify-content: center;
+  }
+
+  .banner-desc {
+    text-shadow: 2px 1px 3px $primary;
+  }
+}
+
+
+.img-content {
+  padding-top: 30px;
+  .content {
+    font-size: 20px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 300;
+  }
 }

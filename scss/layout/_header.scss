@@ -1,3 +1,31 @@
 /* ==========================================================================
 Header
 ========================================================================== */
+header {
+    border-bottom: 1px solid black;
+}
+// Header left
+.logo {
+    padding-top: 10px;
+    .logo-text {
+        background-color: red;
+    }
+}
+.navbar-nav {
+    @include flex(wrap);
+}
+
+.social {
+    padding-bottom: 35px;
+    .social-list {
+        margin: 0 auto;
+    }
+}
+
+// Header right
+.nav-link {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+

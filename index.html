@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Frontend Seed 4</title>
+  <title>Khailegend</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
@@ -22,8 +23,8 @@
   <meta name="description" content="Frontend Seed 4 - Description">
 
   <meta property="fb:app_id" content="your_app_id">
-  <meta property="og:locale" content="en_US"/>
-  <meta property="og:type" content="article"/>
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
   <meta property="og:title" content="">
   <meta property="og:description" content="">
   <meta property="og:url" content="">
@@ -56,6 +57,7 @@
     *::before,
     *::after {
       box-sizing: inherit;
+      -webkit-box-sizing: border-box;
     }
 
     .app-loading {
@@ -83,7 +85,7 @@
       justify-content: center;
     }
 
-    .app-loading .bouncing-loader > div {
+    .app-loading .bouncing-loader>div {
       width: 1rem;
       height: 1rem;
       margin: 3rem 0.2rem;
@@ -92,11 +94,11 @@
       animation: bouncing-loader 0.6s infinite alternate;
     }
 
-    .app-loading .bouncing-loader > div:nth-child(2) {
+    .app-loading .bouncing-loader>div:nth-child(2) {
       animation-delay: 0.2s;
     }
 
-    .app-loading .bouncing-loader > div:nth-child(3) {
+    .app-loading .bouncing-loader>div:nth-child(3) {
       animation-delay: 0.4s;
     }
   </style>
@@ -109,38 +111,326 @@
 </head>
 
 <body>
-<div class="app-loading">
-  <div class="bouncing-loader">
-    <div></div>
-    <div></div>
-    <div></div>
+  <div class="app-loading">
+    <div class="bouncing-loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
-</div>
-<div class="wrapper" id="site_wrapper">
-  <header class="header" id="header">
-  </header>
-  <main class="main" id="main">
-    <h1>Hello world!</h1>
-  </main>
-  <footer class="footer" id="footer">
-  </footer>
-</div>
+  <div class="wrapper" id="site_wrapper">
+    <header class="header" id="header" >
+      <nav class="navbar navbar-expand-lg navbar-light container">
+        <div class="header-left">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="KHẢI ƠI" class="logo">
+          </a>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+          <p class="desc font-weight-light">
+            website developer
+          </p>
+        </div>
 
-<!-- Core JavaScript -->
-<!--<script src="dist/core.min.js"></script>-->
-<script src="third_party/modernizr.min.js"></script>
-<!-- End Core JavaScript -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<!-- JavaScript -->
-<!--<script src="dist/app.min.js"></script>-->
-<script src="js/common.js"></script>
-<script src="customs/script.js"></script>
-<!-- End JavaScript -->
+        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+
+          <div class="navbar-brand social">
+            <ul class="social-list list-inline">
+              <li class="social-item list-inline-item">
+                <a href="#">
+                  <i class="fab fa-instagram text-dark"></i>
+                </a>
+              </li>
+              <li class="social-item list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f text-dark"></i>
+                </a>
+              </li>
+              <li class="social-item list-inline-item">
+                <a href="#">
+                  <i class="fab fa-youtube text-dark"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#skill-bassic">SKILL BASSIC</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#online-learning">ONLINE LEARNING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#next-course">NEXT COURSE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://vietcv.io/cv-software-engineer-42">CV ONLINE</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main container" id="main">
+      <div class="banner row justify-content-center pt-4">
+        <img src="images/khai.jpg" alt="banner" class="banner-img rounded-circle">
+        <h3 class="col-12 pt-4">
+
+          <div id="typed-strings">
+            <p>Hi, I'm Nhan Chi Khai. I'm recording the journey to become full-stack developer!</p>
+          </div>
+
+          <p class="banner-desc text-center" id="typed"></p>
+
+        </h3>
+      </div>
+
+      <div>
+        <hr>
+      </div>
+
+      <div class="img-content" id="skill-bassic">
+        <div class="row">
+          <div class="col-12">
+            <p class="skill-bassic font-weight-bold">
+              <button id="btn-ins" class="btn btn-lg bg-dark rounded-circle font-weight-bold">
+                <i class="text-light">Skills Bassic</i>
+              </button>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="images/js.png" style="background-color: #ffd93a;" alt="content">
+            <p class="content text-center pt-2">JavaScript</p>
+          </div>
+          <div class="col-md-4">
+            <img src="images/css.jpg" alt="content">
+            <p class="content text-center pt-2">CSS</p>
+          </div>
+          <div class="col-md-4">
+            <img src="images/html.jpg" alt="content">
+            <p class="content text-center pt-2">HTML</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <hr>
+      </div>
+
+
+      <div class="img-content" id="online-learning">
+        <div class="row">
+          <p class="online-learning font-weight-bold col-12">
+            <button id="btn-ins" class="btn btn-lg bg-dark rounded-circle font-weight-bold">
+              <i class="text-light">Online Learning</i>
+            </button>
+          </p>
+          <div class="col-md-6 pb-5">
+            <iframe height="360px" style="width: 100%"
+              src="https://www.youtube.com/embed/videoseries?list=PLkY6Xj8Sg8-s-m-qFBQFoeNSfpCTBiwMU" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="pt-4">NodeJS Web Server using Express 2020</3>
+          </div>
+          <div class="col-md-6 pb-5">
+            <iframe height="360px" style="width: 100%"
+              src="https://www.youtube.com/embed/videoseries?list=PLJ5qtRQovuEOoKffoCBzTfvzMTTORnoyp" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="pt-4">Khóa Học Lập Trình React.js - Redux ( Reactjs redux tutorial )</3>
+          </div>
+          <div class="col-md-6 pb-5">
+            <iframe height="360" style="width: 100%;"
+              src="https://www.youtube.com/embed/videoseries?list=PLcCp4mjO-z98WAu4sd0eVha1g-NMfzHZk" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="pt-4">React / Material-UI</3>
+          </div>
+          <div class="col-md-6 pb-5">
+            <iframe height="360" style="width: 100%;"
+              src="https://www.youtube.com/embed/videoseries?list=PLkY6Xj8Sg8-tVbSFcv-p1yOaHiG8fo0kP" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="pt-4">JavaScript Advanced 2020</3>
+          </div>
+        </div>
+      </div>
+
+      <nav class="row justify-content-center" aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="banner-bottom pt-5" id="next-course">
+        <button id="btn-ins" class="btn btn-lg bg-dark rounded-circle font-weight-bold">
+          <i class="text-light">next course</i>
+        </button>
+
+        <div class="banner-button-list pt-4 pb-4">
+          <div class="row text-center">
+            <div class="col-md-3 col-sm-6 pt-4">
+              <img src="images/vuejs.jpg" alt="content">
+            </div>
+            <div class="col-md-3 col-sm-6 pt-4">
+              <img src="images/ruby.jpg" alt="content">
+            </div>
+            <div class="col-md-3 col-sm-6 pt-4">
+              <img src="images/java.jpg" alt="content">
+            </div>
+            <div class="col-md-3 col-sm-6 pt-4">
+              <img src="images/php.jpg" alt="content">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <hr>
+      </div>
+
+    </main>
+
+    <footer class="footer container pb-4" id="footer">
+      <div class="row">
+        <div class="col-md-2 col-4">
+          <img src="images/logo-icon.png" alt="icon">
+
+          <div class="social-bottom row justify-content-center pt-4">
+            <ul class="social-list list-inline">
+              <li class="social-item list-inline-item">
+                <a href="#">
+                  <i class="fab fa-instagram text-dark"></i>
+                </a>
+              </li>
+              <li class="social-item list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f text-dark"></i>
+                </a>
+              </li>
+              <li class="social-item list-inline-item">
+                <a href="#">
+                  <i class="fab fa-youtube text-dark"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <p class="reserved text-center">
+            <small>
+              ©<u>KHAILEGEND</u>2020
+            </small>
+          </p>
+        </div>
+
+        <div class="new col-md-5 col-12">
+          <p class="font-weight-bold">BÀI VIẾT MỚI NHẤT</p>
+          <p>
+            <a href="#" class="new-link">5 BƯỚC ĐỂ BỚT NHỎ NHEN | Vlog | Giang Ơi</a>
+          </p>
+          <p>
+            <a href="#" class="new-link">5 THỨ AI CŨNG MUA NHƯNG MÌNH LẠI KHÔNG MUA | Vlog | Giang Ơi</a>
+          </p>
+          <p>
+            <a href="#" class="new-link">CHỒNG TÔI NGHĨ GÌ VỀ NHỮNG KHUYẾT ĐIỂM NGOẠI HÌNH CỦA QUÝ VỊ | Chuyện làm đẹp |
+              Giang Ơi</a>
+          </p>
+        </div>
+
+        <div class="contact col-md-5 col-12">
+          <p class="font-weight-bold">NHẬN THÔNG BÁO</p>
+          <p>
+            Đăng Ký Nhận Bài Viết Mới Nhất Thông Qua Email
+          </p>
+          <form>
+            <input type="text" name="email" class="form-control" placeholder="Email Address">
+          </form>
+
+          <button class="btn btn-danger mt-4 pl-5 pr-5">
+            <b>ĐĂNG KÍ</b>
+          </button>
+          
+        </div>
+      </div>
+    </footer>
+    <button type="button" id="click" class="btn btn-lg btn-primary rounded-circle">
+      <i class="fas fa-angle-up"></i>
+    </button>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <!-- Core JavaScript -->
+  <!--<script src="dist/core.min.js"></script>-->
+  <script src="third_party/modernizr.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+
+  <!-- End Core JavaScript -->
+
+  <!-- JavaScript -->
+  <!--<script src="dist/app.min.js"></script>-->
+  <script src="js/common.js"></script>
+  <script src="customs/script.js"></script>
+  <script>
+    var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings',
+
+    });
+
+    jQuery(document).ready(function ($) {
+      $('a[href^="#"]').bind('click.smoothscroll', function (e) {
+        e.preventDefault();
+        var target = this.hash,
+          $target = $(target);
+
+        $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+        }, 500, 'swing', function () {
+          window.location.hash = target;
+        });
+      });
+    });
+
+    $(document).ready(function () {
+      $("#click").click(function () {
+        $('html, body').animate({
+          scrollTop: $("#header").offset().top
+        }, 2000);
+      });
+    });
+
+    $("#btn-scrollTop").click(function () {
+      $([document.documentElement, document.body]).animate({
+        scrollTop: $("#elementtoScrollToID").offset().top
+      }, 500);
+    });
+  </script>
+  <!-- End JavaScript -->
 </body>
+
 </html>
