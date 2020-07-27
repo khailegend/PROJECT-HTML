@@ -39,12 +39,12 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
   function scrollToAnchor() {
     $('.js-scroll-to').on('click', function (event) {
       let $anchor = $(this);
-      let headerH = '0';
+      let headerH = '100';
       $('html, body')
         .stop()
         .animate(
           {
-            scrollTop: $($anchor.attr('href')).offset().top - headerH + 'px'
+            scrollTop: $($anchor.attr('href')).offset().top - headerH
           },
           1000
         );
@@ -55,20 +55,52 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
   function init() {
     scrollToAnchor();
     getBarwidth();
+    scrollToTop();
+    changeSizeNav();
+    animation();
+    clickToggerMenu()
   }
 
   $(document).ready(function () {
     init();
   }); // end document ready function
 
-  $(window).on('scroll', function () {
-  });
+  function changeSizeNav() {
+    $(window).on('scroll', function () {
+      if ($("nav").offset().top > 10) {
+        $("nav").addClass("small-nav");
+        $("#btn-scroll-top").removeClass('hidebtn-to-top')
+      }
+      else {
+        $("nav").removeClass("small-nav");
+        $("#btn-scroll-top").addClass('hidebtn-to-top');
+      }
+    });
+  }
 
+  function clickToggerMenu() {
+    let n = false;
+    $('.navbar-toggler').click(function(){
+      if( n == false ) {
+        $(".icon").removeClass("fas fa-chevron-down");
+        $(".icon").addClass("fas fa-chevron-up");
+        n = true
+      }
+      else if( n == true ) {
+        $(".icon").removeClass("fas fa-chevron-up");
+        $(".icon").addClass("fas fa-chevron-down");
+        n = false
+      }
+      
+    })
+  }
+
+  function scrollToTop() {
   // if ($('.x-toTop').length) {
   //   let scrollTrigger = 100, // px
   //     backToTop = function () {
   //       let scrollTop = $(window).scrollTop();
-  //       if (scrollTop > scrollTrigger) {
+  //       if (scrollTop == scrollTrigger) {
   //         $('.x-toTop').addClass('active');
   //       } else {
   //         $('.x-toTop').removeClass('active');
@@ -79,5 +111,28 @@ if (Modernizr.touch === true && $(window).width() <= 767) {
   //     backToTop();
   //   });
   // }
+  $("#clickToTop").click(function () {
+    if ($("nav").offset().top > 10) {
+      $('html, body').animate({
+        scrollTop: $("#header").offset().top
+      }, 1000);
+    }
+  });
+}
 
-})(jQuery); // End jQuery
+function textBannerAnimation() {
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+  });
+}
+
+function animation() {
+  let banner = $(".banner");
+  banner.animate({ height: '100%' }, "slow");
+  banner.animate({ width: '100%' }, "slow", textBannerAnimation());
+
+  let navLink = $(".js-scroll-to")
+  navLink.animate({ fontSize: '15px' }, "slow");
+}
+
+}) (jQuery); // End jQuery

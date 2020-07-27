@@ -4,37 +4,56 @@ Content
 img {
   height: auto;
   max-width: 100%;
-  
-}
-
-.header {
-  .social ul li {
-    margin: 0 10px 0 10px;
-  }
 }
 
 .app-loading {
   display: none;
 }
 
-.banner {
-  .banner-img {
-    justify-content: center;
+.main {
+  padding-top: 100px;
+  .banner {
+    height: 100px;
+    width: 100px;
+    .banner-desc {
+      text-shadow: 2px 1px 3px $primary;
+    }
   }
 
-  .banner-desc {
-    text-shadow: 2px 1px 3px $primary;
+  .skill-bassic {
+    padding-top: 30px;
+    .content {
+      font-size: 20px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 300;
+    }
   }
 }
 
 
-.img-content {
-  padding-top: 30px;
-  .content {
-    font-size: 20px;
-  }
-  p {
-    font-size: 20px;
-    font-weight: 300;
-  }
+// out container 
+.btn-to-top {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+.social-fixel {
+  position: fixed;
+  bottom: 30%;
+  left: 2%;
+}
+.social-item.left-icon {
+  margin-top: 20px;
+  width: 35px;
+  height: 35px;
+  padding-top: 5px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 30%;
+  box-shadow: 2px 2px 8px black;
+}
+.hidebtn-to-top {
+  display: none;
 }

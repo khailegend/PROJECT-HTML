@@ -37,7 +37,7 @@
 }
 
 .hi-icon {
-  @include hi-icon(40px, 40px, #FFF, 20px);
+  @include hi-icon(40px, 40px, #fff, 20px);
 }
 
 /* Effect 1 */
@@ -54,12 +54,12 @@
   padding: 7px;
   box-shadow: 0 0 0 4px #fff;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-  -webkit-transform: scale(.8);
+  -webkit-transform: scale(0.8);
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-  -moz-transform: scale(.8);
-  -ms-transform: scale(.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
   transition: transform 0.2s, opacity 0.2s;
-  transform: scale(.8);
+  transform: scale(0.8);
   opacity: 0;
 }
 
@@ -185,7 +185,7 @@
 }
 
 .hi-icon-effect-3a {
-  @include hi-icon-effect-3a(#f06060, #FFF);
+  @include hi-icon-effect-3a(#f06060, #fff);
 }
 
 /* Effect 3b */
@@ -207,7 +207,7 @@
 }
 
 .hi-icon-effect-3b {
-  @include hi-icon-effect-3b(#07041f, #FFF);
+  @include hi-icon-effect-3b(#07041f, #fff);
 }
 
 /* Effect 4 */
@@ -255,7 +255,7 @@
 
 @-webkit-keyframes spinAround {
   from {
-    -webkit-transform: rotate(0deg)
+    -webkit-transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(360deg);
@@ -264,7 +264,7 @@
 
 @-moz-keyframes spinAround {
   from {
-    -moz-transform: rotate(0deg)
+    -moz-transform: rotate(0deg);
   }
   to {
     -moz-transform: rotate(360deg);
@@ -273,7 +273,7 @@
 
 @keyframes spinAround {
   from {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
@@ -631,10 +631,12 @@
   }
   40% {
     opacity: 0.5;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc,
+      0 0 0 10px rgba(255, 255, 255, 0.5);
   }
   100% {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc,
+      0 0 0 10px rgba(255, 255, 255, 0.5);
     -webkit-transform: scale(1.5);
     opacity: 0;
   }
@@ -646,10 +648,12 @@
   }
   40% {
     opacity: 0.5;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc,
+      0 0 0 10px rgba(255, 255, 255, 0.5);
   }
   100% {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc,
+      0 0 0 10px rgba(255, 255, 255, 0.5);
     -moz-transform: scale(1.5);
     opacity: 0;
   }
@@ -661,10 +665,12 @@
   }
   40% {
     opacity: 0.5;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc,
+      0 0 0 10px rgba(255, 255, 255, 0.5);
   }
   100% {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc,
+      0 0 0 10px rgba(255, 255, 255, 0.5);
     transform: scale(1.5);
     opacity: 0;
   }

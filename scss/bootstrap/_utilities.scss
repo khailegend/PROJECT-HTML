@@ -48,7 +48,7 @@ $i_marginpadding: 50;
   $i_marginpadding: $i_marginpadding - 5;
 }
 
-@mixin bg-opacity($color,$value) {
+@mixin bg-opacity($color, $value) {
   $i_bg_opacity: 50;
   @while $i_bg_opacity >= 0 {
     .bg-#{$color}-o-#{$i_bg_opacity} {

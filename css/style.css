@@ -4393,7 +4393,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: #1932a9;
+  color: #000000;
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
@@ -9775,7 +9775,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .row-sm > .col,
-.row-sm > [class*="col-"] {
+.row-sm > [class*='col-'] {
   padding-right: 3px;
   padding-left: 3px;
   margin-bottom: 6px;
@@ -9787,7 +9787,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .row-md > .col,
-.row-md > [class*="col-"] {
+.row-md > [class*='col-'] {
   padding-right: 5px;
   padding-left: 5px;
   margin-bottom: 10px;
@@ -10551,18 +10551,19 @@ a.text-dark:hover, a.text-dark:focus {
 Header
 ========================================================================== */
 header {
+  font-family: "'Abel', sans-serif";
+  font-style: italic;
+  font-weight: bold;
+}
+
+header .navbar {
   border-bottom: 1px solid black;
+  background-color: white;
+  text-shadow: 5px 3px 5px #a6a9b1;
+  box-shadow: 0px 2px 10px #a6a9b1;
 }
 
-.logo {
-  padding-top: 10px;
-}
-
-.logo .logo-text {
-  background-color: red;
-}
-
-.navbar-nav {
+header .navbar .navbar-nav {
   -webkit-box-flex: wrap;
   -webkit-flex: wrap;
   -moz-box-flex: wrap;
@@ -10571,17 +10572,33 @@ header {
   flex: wrap;
 }
 
-.social {
-  padding-bottom: 35px;
-}
-
-.social .social-list {
-  margin: 0 auto;
-}
-
-.nav-link {
-  font-size: 20px;
+header .navbar .navbar-nav .nav-link {
+  font-size: 10px;
   margin-right: 10px;
+}
+
+header .small-nav .navbar-brand {
+  height: 40%;
+  width: 40%;
+  transition: 1s;
+}
+
+header .small-nav .desc {
+  font-size: 14px;
+  transition: 0.5s;
+  margin-top: 0;
+}
+
+@media all and (max-width: 475px) {
+  header .logo {
+    height: 60%;
+    width: 60%;
+  }
+  header .btn-togger {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+  }
 }
 
 /* ==========================================================================
@@ -10592,33 +10609,61 @@ img {
   max-width: 100%;
 }
 
-.header .social ul li {
-  margin: 0 10px 0 10px;
-}
-
 .app-loading {
   display: none;
 }
 
-.banner .banner-img {
-  justify-content: center;
+.main {
+  padding-top: 100px;
 }
 
-.banner .banner-desc {
+.main .banner {
+  height: 100px;
+  width: 100px;
+}
+
+.main .banner .banner-desc {
   text-shadow: 2px 1px 3px #1932a9;
 }
 
-.img-content {
+.main .skill-bassic {
   padding-top: 30px;
 }
 
-.img-content .content {
+.main .skill-bassic .content {
   font-size: 20px;
 }
 
-.img-content p {
+.main .skill-bassic p {
   font-size: 20px;
   font-weight: 300;
+}
+
+.btn-to-top {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
+.social-fixel {
+  position: fixed;
+  bottom: 30%;
+  left: 2%;
+}
+
+.social-item.left-icon {
+  margin-top: 20px;
+  width: 35px;
+  height: 35px;
+  padding-top: 5px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 30%;
+  box-shadow: 2px 2px 8px black;
+}
+
+.hidebtn-to-top {
+  display: none;
 }
 
 /* ==========================================================================

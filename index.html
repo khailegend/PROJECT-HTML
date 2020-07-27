@@ -11,11 +11,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
   <link rel="manifest" href="/images/favicons/site.webmanifest">
-  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="mask-icon" href="/images/favicons/safari-pinned-tab.svg" color="white">
   <link rel="shortcut icon" href="/images/favicons/favicon.ico">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="/images/favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
+
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
 
   <link rel="canonical" href="http://">
   <meta name="title" content="Frontend Seed 4 - Title">
@@ -51,6 +54,7 @@
 
     html {
       box-sizing: border-box;
+      overflow: scroll;
     }
 
     *,
@@ -101,6 +105,13 @@
     .app-loading .bouncing-loader>div:nth-child(3) {
       animation-delay: 0.4s;
     }
+
+    .hr-bottom {
+      width: 100px;
+      border-bottom: 1px solid  black;
+      margin: auto;
+    }
+
   </style>
   <!--<link rel='preload' href='dist/app.min.css' as='style' onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
@@ -118,83 +129,62 @@
       <div></div>
     </div>
   </div>
+
   <div class="wrapper" id="site_wrapper">
-    <header class="header" id="header" >
-      <nav class="navbar navbar-expand-lg navbar-light container">
-        <div class="header-left">
-          <a class="navbar-brand" href="#">
-            <img src="images/logo.png" alt="KHẢI ƠI" class="logo">
-          </a>
+    <header class="header pb-5" id="header">
+      <nav class="header-nav navbar navbar-expand-xl navbar-light fixed-top pb-0 pt-0">
+        <div class="container">
+          <div class="header-left">
+            <a class="navbar-brand" href="#">
+              <img src="images/logo.png" alt="khailegend" class="logo mt-4">
+            </a>
+            <p class="desc font-weight-light">
+              <i> website developer </i>
+            </p>
+          </div>
 
-          <p class="desc font-weight-light">
-            website developer
-          </p>
-        </div>
+          <div class="pb-4 btn-togger">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span><i class="fas fa-chevron-down pt-1 pb-1 pl-1 pr-1 icon"></i></span>
+            </button>
+          </div>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-
-          <div class="navbar-brand social">
-            <ul class="social-list list-inline">
-              <li class="social-item list-inline-item">
-                <a href="#">
-                  <i class="fab fa-instagram text-dark"></i>
-                </a>
+          <div class="header-right  collapse navbar-collapse" id="navbarToggleExternalContent">
+            <ul class="navbar-nav ml-auto menu">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-to" href="#skill-bassic">SKILL BASSIC</a>
               </li>
-              <li class="social-item list-inline-item">
-                <a href="#">
-                  <i class="fab fa-facebook-f text-dark"></i>
-                </a>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-to" href="#online-learning">ONLINE LEARNING</a>
               </li>
-              <li class="social-item list-inline-item">
-                <a href="#">
-                  <i class="fab fa-youtube text-dark"></i>
-                </a>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-to" href="#next-course">NEXT COURSE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-to" href="https://vietcv.io/cv-software-engineer-42">CV ONLINE</a>
               </li>
             </ul>
           </div>
-
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#skill-bassic">SKILL BASSIC</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#online-learning">ONLINE LEARNING</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#next-course">NEXT COURSE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://vietcv.io/cv-software-engineer-42">CV ONLINE</a>
-            </li>
-          </ul>
         </div>
       </nav>
     </header>
 
     <main class="main container" id="main">
-      <div class="banner row justify-content-center pt-4">
-        <img src="images/khai.jpg" alt="banner" class="banner-img rounded-circle">
+      <div class="banner text-center pt-5">
+        <img src="images/khai.jpg" alt="banner" class="banner-img rounded-circle align-self-center">
         <h3 class="col-12 pt-4">
-
           <div id="typed-strings">
             <p>Hi, I'm Nhan Chi Khai. I'm recording the journey to become full-stack developer!</p>
           </div>
-
           <p class="banner-desc text-center" id="typed"></p>
-
         </h3>
       </div>
 
-      <div>
-        <hr>
-      </div>
+      <div class="hr-bottom"></div>
 
-      <div class="img-content" id="skill-bassic">
+      <div class="skill-bassic" id="skill-bassic">
         <div class="row">
           <div class="col-12">
             <p class="skill-bassic font-weight-bold">
@@ -218,12 +208,9 @@
         </div>
       </div>
 
-      <div>
-        <hr>
-      </div>
+      <div class="hr-bottom pt-5"></div>
 
-
-      <div class="img-content" id="online-learning">
+      <div class="online-learning pt-5" id="online-learning">
         <div class="row">
           <p class="online-learning font-weight-bold col-12">
             <button id="btn-ins" class="btn btn-lg bg-dark rounded-circle font-weight-bold">
@@ -276,8 +263,8 @@
           </li>
         </ul>
       </nav>
-
-      <div class="banner-bottom pt-5" id="next-course">
+      
+      <div class="next-course pt-5" id="next-course">
         <button id="btn-ins" class="btn btn-lg bg-dark rounded-circle font-weight-bold">
           <i class="text-light">next course</i>
         </button>
@@ -299,18 +286,14 @@
           </div>
         </div>
       </div>
-
-      <div>
-        <hr>
-      </div>
-
     </main>
 
-    <footer class="footer container pb-4" id="footer">
+    <div class="hr-bottom pt-5"></div>
+
+    <footer class="footer container pt-5 pb-2" id="footer">
       <div class="row">
         <div class="col-md-2 col-4">
           <img src="images/logo-icon.png" alt="icon">
-
           <div class="social-bottom row justify-content-center pt-4">
             <ul class="social-list list-inline">
               <li class="social-item list-inline-item">
@@ -360,17 +343,38 @@
           <form>
             <input type="text" name="email" class="form-control" placeholder="Email Address">
           </form>
-
           <button class="btn btn-danger mt-4 pl-5 pr-5">
             <b>ĐĂNG KÍ</b>
           </button>
-          
         </div>
       </div>
     </footer>
-    <button type="button" id="click" class="btn btn-lg btn-primary rounded-circle">
-      <i class="fas fa-angle-up"></i>
-    </button>
+
+    <div class="social-fixel">
+      <ul class="social-list list-inline ">
+        <li class="social-item left-icon bg-warning">
+          <a href="#">
+            <i class="fab fa-instagram text-light icon-social"></i>
+          </a>
+        </li>
+        <li class="social-item left-icon bg-primary">
+          <a href="#">      
+            <i class="fab fa-facebook-f text-light icon-social"></i>       
+          </a>
+        </li>
+        <li class="social-item left-icon bg-danger">
+          <a href="#">           
+            <i class="fab fa-youtube text-light icon-social"></i>         
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="btn-scroll-top" class="hidebtn-to-top">
+      <button type="button" id="clickToTop" class="btn btn-lg btn-to-top btn-primary rounded-circle ">
+        <i class="fas fa-angle-up"></i>
+      </button>
+    </div>
   </div>
 
   <!-- Optional JavaScript -->
@@ -396,40 +400,6 @@
   <!--<script src="dist/app.min.js"></script>-->
   <script src="js/common.js"></script>
   <script src="customs/script.js"></script>
-  <script>
-    var typed = new Typed('#typed', {
-      stringsElement: '#typed-strings',
-
-    });
-
-    jQuery(document).ready(function ($) {
-      $('a[href^="#"]').bind('click.smoothscroll', function (e) {
-        e.preventDefault();
-        var target = this.hash,
-          $target = $(target);
-
-        $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-        }, 500, 'swing', function () {
-          window.location.hash = target;
-        });
-      });
-    });
-
-    $(document).ready(function () {
-      $("#click").click(function () {
-        $('html, body').animate({
-          scrollTop: $("#header").offset().top
-        }, 2000);
-      });
-    });
-
-    $("#btn-scrollTop").click(function () {
-      $([document.documentElement, document.body]).animate({
-        scrollTop: $("#elementtoScrollToID").offset().top
-      }, 500);
-    });
-  </script>
   <!-- End JavaScript -->
 </body>
 
